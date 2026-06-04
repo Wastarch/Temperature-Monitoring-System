@@ -1,5 +1,5 @@
 {
-    "mode": 2,
+    "mode": 8,
     "curve_mode": "separate",
     "serial": {
         "port": "COM11",

@@ -6,6 +6,7 @@
 
 ```
 Temperature-Monitoring-System/
+├── start.ps1                # 启动脚本（菜单式操作）
 ├── upper computer/          # 上位机（PySide6 GUI）
 │   ├── main.py              # 程序入口
 │   ├── config.json          # 配置文件（运行时自动生成）
@@ -70,14 +71,38 @@ uv sync
 
 ### 运行
 
-**1. 启动下位机模拟器（模拟温度数据）：**
+**方式一：使用启动脚本（推荐）**
+
+项目根目录下提供了 `start.ps1` 启动脚本，提供菜单式操作：
+
+```powershell
+.\start.ps1
+```
+
+> 如果遇到执行策略限制，先运行：`Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`
+
+菜单选项：
+
+| 选项 | 功能 |
+|------|------|
+| 1 | 启动上位机 (GUI 界面) |
+| 2 | 启动下位机 (数据模拟器) |
+| 3 | 同时启动上位机和下位机 |
+| 4 | 仅安装/更新依赖 |
+| 0 | 退出 |
+
+脚本会自动检查 uv 是否安装、自动运行 `uv sync` 安装依赖，并在新窗口中启动程序。
+
+**方式二：手动运行**
+
+启动下位机模拟器：
 
 ```bash
 cd "lower computer"
 uv run main.py
 ```
 
-**2. 启动上位机：**
+启动上位机：
 
 ```bash
 cd "upper computer"
