@@ -1,0 +1,71 @@
+{
+    "mode": 2,
+    "curve_mode": "separate",
+    "serial": {
+        "port": "COM11",
+        "baudrate": 9600
+    },
+    "channels": {
+        "1": {
+            "alarm": {
+                "enabled": true,
+                "low_limit": 0,
+                "high_limit": 50
+            }
+        },
+        "2": {
+            "alarm": {
+                "enabled": true,
+                "low_limit": 0,
+                "high_limit": 50
+            }
+        },
+        "3": {
+            "alarm": {
+                "enabled": true,
+                "low_limit": 0,
+                "high_limit": 50
+            }
+        },
+        "4": {
+            "alarm": {
+                "enabled": true,
+                "low_limit": 0,
+                "high_limit": 50
+            }
+        },
+        "5": {
+            "alarm": {
+                "enabled": true,
+                "low_limit": 0,
+                "high_limit": 50
+            }
+        },
+        "6": {
+            "alarm": {
+                "enabled": true,
+                "low_limit": 0,
+                "high_limit": 50
+            }
+        },
+        "7": {
+            "alarm": {
+                "enabled": true,
+                "low_limit": 0,
+                "high_limit": 50
+            }
+        },
+        "8": {
+            "alarm": {
+                "enabled": true,
+                "low_limit": 0,
+                "high_limit": 50
+            }
+        }
+    },
+    "acquisition": {
+        "max_records": 10000,
+        "display_seconds": 300,
+        "interval_ms": 100
+    }
+}
